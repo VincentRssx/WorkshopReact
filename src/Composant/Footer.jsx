@@ -2,7 +2,7 @@ function Footer() {
 
     return (
         <footer className="footer">
-            <p>© Animal Lovers</p>
+            <p>© Animal Lovers ❤</p>
         </footer>
     )
 
