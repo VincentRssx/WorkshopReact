@@ -11,6 +11,7 @@ body {
   background-size: cover;
   margin: 0;
 }
+
 body p {
   text-align: center;
   font-size: 1.3rem;
@@ -24,12 +25,13 @@ section.Title {
 }
 
 h1 {
-  border: solid 5px black;
+  border: solid 10px black;
   width: 70vw;
   text-align: center;
   font-size: 3em;
   transform: rotate(-5deg);
   background-color: rgb(255, 255, 255);
+  border-radius: 20%;
 }
 
 .logo {
@@ -43,10 +45,12 @@ h1 {
   align-items: center;
   margin-bottom: 2rem;
 }
+
 .Nav button {
   border: solid 5px black;
   font-size: 2vw;
 }
+
 .Nav .active {
   background-color: black;
   color: white;
@@ -58,9 +62,11 @@ h1 {
   flex-wrap: wrap;
   margin: 2vw 0;
 }
+
 .cards .card:hover {
   transform: scale(1.1);
 }
+
 .cards .card {
   border-radius: 20px;
   transition: all 1s;
@@ -72,12 +78,14 @@ h1 {
   box-shadow: 0 0 5px black;
   text-shadow: 0 0 2px black;
 }
+
 .cards .card img {
   border-radius: 5px;
   margin: 1em;
   height: 20vw;
   box-shadow: inherit;
 }
+
 .cards .card p {
   margin: 0.2rem 0;
 }
@@ -85,4 +93,6 @@ h1 {
 .footer {
   margin-top: 2rem;
   text-align: center;
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */
