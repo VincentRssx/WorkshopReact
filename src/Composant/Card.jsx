@@ -1,11 +1,12 @@
-function Card ({arrayMap,setArray,Array}) {
-console.log("🚀 ~ file: Card.jsx:2 ~ Card ~ arrayMap:", arrayMap)
-
+function Card ({animal}) {
 
 
     return(
     <>
-    <img src={arrayMap.imgSrc} alt=""/>
+        <div className="card">
+            <img className="photo" src={animal.imgSrc}/>
+            <p>{animal.name}</p>
+        </div>
     </>
     )
 }

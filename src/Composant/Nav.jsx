@@ -1,37 +1,33 @@
 import { useState } from "react"
-function Nav ({allArray,catArray,dogArray,routeArray}) {
+import Button from "./Button"
 
-    const [Array, setArray] = useState(0);
+function Nav({ buttonArray, setDisplayArray, animalArray }) {
 
-    const handleClick = () => {
-        setArray (Array +1)
+    // Changement de l'index du bouton actif + changement du tableau à afficher
+    function handleClick(index) {
+        setActiveButtonIndex(index)
+        setDisplayArray(animalArray[index])
     }
-    const handleClickbefore = () => {
-        setArray (Array -1)
-    }
 
+    // Index du bouton actif
+    const [activeButtonIndex, setActiveButtonIndex] = useState(0)
 
-return(
-<>
-<section className="Nav">
-    {Array > 0 ? <button onClick={handleClickbefore}>A Prendre !</button> : <bouton>Rupture</bouton>}
-    {Array < allArray.length -1 ? <button onClick={handleClick} >A Sauver !</button> : <bouton>Trop Tard ... !</bouton> }
-
-    
-</section>
-<section className="cards">
-{allArray.map((toutArray) => {
-    return(
-    <div className="card">
-        <img className="photo" src={toutArray[Array].imgSrc}/>
-        <p>{toutArray[Array].name}</p>
-        </div>
-        )
-})}
-        </section>
+    return (
+        <>
+            <section className="Nav">
+                {buttonArray.map((button, index) => (
+                    <Button className={index === activeButtonIndex ? "active" : ""} 
+                    key={index} 
+                    index={index} 
+                    name={button} 
+                    setDisplayArray={setDisplayArray} 
+                    animalArray={animalArray} 
+                    handleClick={handleClick} />
+                ))}
+            </section>
 
         </>
-)
+    )
 }
 
 export default Nav
