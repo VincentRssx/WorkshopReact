@@ -3,7 +3,7 @@ function Header () {
         <section className="Title">
         
 <img className="logo" src="../src/assets/adoptcat01.png" alt=""/>
-<h1>Les invendus ! </h1>
+<h1>Les Invendus ! </h1>
         </section>
     )
     }
