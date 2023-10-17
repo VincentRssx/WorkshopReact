@@ -49,6 +49,19 @@ function Body() {
       </section>
     </>
   );
+  return (
+    <>
+      <Nav buttonArray={buttonArray} setDisplayArray={setDisplayArray} animalArray={animalArray} />
+      <div className="intro">
+        <p className="textIntro">Il n'est pas trop tard pour l'un de ces {displayArray.length} animaux !</p>
+      </div>
+      <section className="cards">
+        {displayArray.map((animal, index) => (
+          <Card key={index} animal={animal} />
+        ))}
+      </section>
+    </>
+  );
 }
 
 export default Body;
