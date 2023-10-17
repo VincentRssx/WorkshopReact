@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Button from "./Button"
 
-function Nav({ buttonArray, setDisplayArray, animalArray }) {
+function Nav({ buttonArray, setDisplayArray, animalArray, cardAlive }) {
 
     // Changement de l'index du bouton actif + changement du tableau à afficher
     function handleClick(index) {
