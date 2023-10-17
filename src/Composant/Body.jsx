@@ -3,15 +3,6 @@ import Card from "./Card";
 import { useState } from "react";
 function Body() {
   const animalArray = [
-    [
-      { name: "Panpan", imgSrc: "https://images.pexels.com/photos/4001296/pexels-photo-4001296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-      {
-        name: "Punki",
-        imgSrc: "../src/assets/deaddog.jpg",
-      },
-      { name: "Saucisse", imgSrc: "https://images.pexels.com/photos/3104709/pexels-photo-3104709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-      { name: "Civet", imgSrc: "../src/assets/deadcat.jpeg" },
-    ],
 
     [
         { name: "Panpan", imgSrc: "https://images.pexels.com/photos/4588065/pexels-photo-4588065.jpeg?auto=compress&cs=tinysrgb&w=600", text:"choice me", },
